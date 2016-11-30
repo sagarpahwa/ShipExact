@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.shipping.gts.pb.pbshipping.MainActivity">
+    <FrameLayout
+        android:id="@+id/FragFrame"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_above="@+id/copyrighttext"
+        android:src="@drawable/int_pb_hor_rgb_grd_rev"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:id="@+id/copyrighttext"
+        android:textColor="@color/PBwhite"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="© 2016 Pitney Bowes Inc."/>
+</LinearLayout>

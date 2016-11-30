@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@color/PBblue"
+        android:padding="16dp"
+        style="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/PBwhite"
+        android:text="To" />
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="#3E53A4"
+        android:id="@+id/address1To"
+        android:layout_width="match_parent"
+        android:background="@color/PBwhite"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/addressline1To"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Address"
+            android:inputType="textEmailAddress|textAutoComplete"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/PBwhite"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="#3E53A4"
+            >
+
+            <EditText
+                android:id="@+id/PostalCodeTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="Postal Code"
+                android:inputType="number"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/countrySpinnerTo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PBwhite">
+        <Button
+
+            android:layout_margin="16dp"
+            android:id="@+id/ProceedImportTo"
+            android:text="Verify Address"
+            android:textStyle="bold"
+            android:textColor="@color/PBwhite"
+            android:background="@color/PBblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

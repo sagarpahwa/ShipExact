@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/PBwhite">
+
+    <TextView
+        android:background="@color/PBblue"
+        android:padding="16dp"
+        style="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/PBwhite"
+        android:text="Product description" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/productSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PBwhite">
+
+        <Button
+
+            android:layout_margin="16dp"
+            android:id="@+id/ProceedCommidityDescription"
+            android:text="Proceed"
+            android:textStyle="bold"
+            android:textColor="@color/PBwhite"
+            android:background="@color/PBblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

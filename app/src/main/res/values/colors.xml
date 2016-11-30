@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PBcyan">#009DBf</color>
+    <color name="PBmediumblue">#0082D5</color>
+    <color name="PBblue">#3E53A4</color>
+    <color name="PBpurple">#A03F9B</color>
+    <color name="PBmagenta">#CF0989</color>
+    <color name="PBdarkgreen">#00B140</color>
+    <color name="PBgreen">#72BF44</color>
+    <color name="PBdarkorange">#EE6B0B</color>
+    <color name="PBorange">#EF8200</color>
+    <color name="PByellow">#EDB700</color>
+    <color name="PBLightGray">#C0C0C0</color>
+    <color name="PBmediumgray">#9B9B9B</color>
+    <color name="PBdarkgrey">#4E4E4E</color>
+    <color name="PBblack">#000000</color>
+    <color name="PBwhite">#FFFFFF</color>
+    <color name="colorPrimary">#3E53A4</color>
+    <color name="colorPrimaryDark">#3E53A4</color>
+    <color name="colorAccent">#CF0989</color>
+</resources>

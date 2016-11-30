@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.shipping.gts.pb.pbshipping.MainActivity">
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/PBblue"
+                android:gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="16dp"
+                android:text="Ship Exact"
+                android:textColor="@color/PBwhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Item"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ItemDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //item visible
+
+            <LinearLayout
+                android:id="@+id/costLayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Cost"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/CostDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //cost gone
+
+            <LinearLayout
+                android:id="@+id/shiptLayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Shiping"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/ShipingDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //shipment gone
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/insuranceLayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Insurance"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/InsuranceDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //insurance gone
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/dutyLayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Duty"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DutyDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //duty gone
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sTaxLayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Sale Tax"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TaxDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //taxes gone
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/oTaxLayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Other Taxes"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/OtherTaxDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //othertaxes gone
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/totalTextView"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Total"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TotalChargeDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //total visible
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Arrival"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/arrivalDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //arrival visible
+
+            <TextView
+                android:id="@+id/IsRistricted"
+                style="?android:textAppearanceMedium"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/PBwhite"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="16dp"
+                android:text="Restricted !!"
+                android:textColor="@color/PBdarkorange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:id="@+id/IRayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Import restriction"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iRestrictionsDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //import visible
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:id="@+id/ERLayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Export restriction"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/eRestrictionsDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //export visible
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/CRLayout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Carrier restriction"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/RestrictionsDesc"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/PBwhite"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="16dp"
+                    android:text="Ship Exact"
+                    android:textColor="@color/PBblue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            //carrier visible
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/PBwhite"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/ExitApp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/PBblue"
+                    android:text="Done"
+                    android:textColor="@color/PBwhite"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ShipMore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/PBblue"
+                    android:text="ship More"
+                    android:textColor="@color/PBwhite"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            //exit or again visible
+        </LinearLayout>
+    </ScrollView>
+    <!--<ImageView
+        android:layout_above="@+id/copyrighttext"
+        android:src="@drawable/int_pb_hor_rgb_grd_rev"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:id="@+id/copyrighttext"
+        android:textColor="@color/PBwhite"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="© 2016 Pitney Bowes Inc."/>-->
+</LinearLayout>
